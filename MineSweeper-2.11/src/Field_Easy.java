@@ -230,23 +230,23 @@ public class Field_Easy extends JFrame implements ActionListener {
     private String sec = "999";
     private String name = "Anonymous";
 
-    private ImageIcon iconGame = new ImageIcon("src/resources/mine.png");
-    private ImageIcon smiley = new ImageIcon("src/resources/smiley.png");
-    private ImageIcon shocked = new ImageIcon("src/resources/shocked.png");
-    private ImageIcon death = new ImageIcon("src/resources/dead.png");
-    private ImageIcon cool = new ImageIcon("src/resources/cool.png");
-    private ImageIcon smileyOld = new ImageIcon("src/resources/smiley_old.png");
-    private ImageIcon shockedOld = new ImageIcon("src/resources/shocked_old.png");
-    private ImageIcon deathOld = new ImageIcon("src/resources/dead_old.png");
-    private ImageIcon flagsCounterIcon = new ImageIcon("src/resources/flag_counter.png");
-    private ImageIcon flagsCounterIconOld = new ImageIcon("src/resources/flag_counter_old.png");
-    private ImageIcon timerIcon = new ImageIcon("src/resources/timer.png");
-    private ImageIcon timerIconOld = new ImageIcon("src/resources/timer_old.png");
-    private ImageIcon bomb = new ImageIcon("src/resources/bomb.png");
-    private ImageIcon bombOld = new ImageIcon("src/resources/bomb_old.png");
-    private ImageIcon flag = new ImageIcon("src/resources/flag.png");
-    private ImageIcon flagOld = new ImageIcon("src/resources/flag_old.png");
-    private ImageIcon question = new ImageIcon("src/resources/mark.png");
+    private ImageIcon iconGame = new ImageIcon("MineSweeper-2.11/src/resources/mine.png");
+    private ImageIcon smiley = new ImageIcon("MineSweeper-2.11/src/resources/smiley.png");
+    private ImageIcon shocked = new ImageIcon("MineSweeper-2.11/src/resources/shocked.png");
+    private ImageIcon death = new ImageIcon("MineSweeper-2.11/src/resources/dead.png");
+    private ImageIcon cool = new ImageIcon("MineSweeper-2.11/src/resources/cool.png");
+    private ImageIcon smileyOld = new ImageIcon("MineSweeper-2.11/src/resources/smiley_old.png");
+    private ImageIcon shockedOld = new ImageIcon("MineSweeper-2.11/src/resources/shocked_old.png");
+    private ImageIcon deathOld = new ImageIcon("MineSweeper-2.11/src/resources/dead_old.png");
+    private ImageIcon flagsCounterIcon = new ImageIcon("MineSweeper-2.11/src/resources/flag_counter.png");
+    private ImageIcon flagsCounterIconOld = new ImageIcon("MineSweeper-2.11/src/resources/flag_counter_old.png");
+    private ImageIcon timerIcon = new ImageIcon("MineSweeper-2.11/src/resources/timer.png");
+    private ImageIcon timerIconOld = new ImageIcon("MineSweeper-2.11/src/resources/timer_old.png");
+    private ImageIcon bomb = new ImageIcon("MineSweeper-2.11/src/resources/bomb.png");
+    private ImageIcon bombOld = new ImageIcon("MineSweeper-2.11/src/resources/bomb_old.png");
+    private ImageIcon flag = new ImageIcon("MineSweeper-2.11/src/resources/flag.png");
+    private ImageIcon flagOld = new ImageIcon("MineSweeper-2.11/src/resources/flag_old.png");
+    private ImageIcon question = new ImageIcon("MineSweeper-2.11/src/resources/mark.png");
     
     private JMenuBar menubar = new JMenuBar();
     private JMenu game = new JMenu("Game");
@@ -531,7 +531,7 @@ public class Field_Easy extends JFrame implements ActionListener {
                     }
                 }
                 if(sound.isSelected()){
-                    playSound("src/resources/beep-07a.wav");
+                    playSound("MineSweeper-2.11/src/resources/beep-07a.wav");
                 }
             }
         });
@@ -621,15 +621,15 @@ public class Field_Easy extends JFrame implements ActionListener {
         String path;
         ImageIcon n = new ImageIcon();
             switch (cont) {
-                case 1 -> path = (color.isSelected())? "src/resources/1.png" : "src/resources/1_old.png";
-                case 2 -> path = (color.isSelected())? "src/resources/2.png" : "src/resources/2_old.png";
-                case 3 -> path = (color.isSelected())? "src/resources/3.png" : "src/resources/3_old.png";
-                case 4 -> path = (color.isSelected())? "src/resources/4.png" : "src/resources/4_old.png";
-                case 5 -> path = (color.isSelected())? "src/resources/5.png" : "src/resources/5_old.png";
-                case 6 -> path = (color.isSelected())? "src/resources/6.png" : "src/resources/6_old.png";
-                case 7 -> path = (color.isSelected())? "src/resources/7.png" : "src/resources/7_old.png";
-                case 8 -> path = (color.isSelected())? "src/resources/8.png" : "src/resources/8_old.png";
-                case 0 -> path = (color.isSelected())? "src/resources/null.png" : "src/resources/null.png";
+                case 1 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/1.png" : "MineSweeper-2.11/src/resources/1_old.png";
+                case 2 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/2.png" : "MineSweeper-2.11/src/resources/2_old.png";
+                case 3 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/3.png" : "MineSweeper-2.11/src/resources/3_old.png";
+                case 4 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/4.png" : "MineSweeper-2.11/src/resources/4_old.png";
+                case 5 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/5.png" : "MineSweeper-2.11/src/resources/5_old.png";
+                case 6 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/6.png" : "MineSweeper-2.11/src/resources/6_old.png";
+                case 7 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/7.png" : "MineSweeper-2.11/src/resources/7_old.png";
+                case 8 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/8.png" : "MineSweeper-2.11/src/resources/8_old.png";
+                case 0 -> path = (color.isSelected())? "MineSweeper-2.11/src/resources/null.png" : "MineSweeper-2.11/src/resources/null.png";
                 default -> path = "";
             }
             n = new ImageIcon(path);
@@ -661,7 +661,7 @@ public class Field_Easy extends JFrame implements ActionListener {
      */
     private void revealCell(int row, int col) {
         revealed[row][col] = true;
-        ImageIcon B = new ImageIcon("src/resources/bomb.png");
+        ImageIcon B = new ImageIcon("MineSweeper-2.11/src/resources/bomb.png");
 
         if (compareImageIcons(B, (ImageIcon)label_easy[row][col].getIcon())) {
             buttons_easy[row][col].setIcon(label_easy[row][col].getIcon());
@@ -688,7 +688,7 @@ public class Field_Easy extends JFrame implements ActionListener {
     private void changeCategoryInfo(String category, String newNumber, String newName) {
         try {
             // Leggi il contenuto attuale del file
-            File file = new File("src/resources/file.txt");
+            File file = new File("MineSweeper-2.11/src/resources/file.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             StringBuilder content = new StringBuilder();
             String line;
@@ -881,7 +881,7 @@ public class Field_Easy extends JFrame implements ActionListener {
      */
     private void readFile() {
         try {
-            File myObj = new File("src/resources/file.txt");
+            File myObj = new File("MineSweeper-2.11/src/resources/file.txt");
             Scanner myReader = new Scanner(myObj);
             StringBuilder timeString = new StringBuilder();
             timeString.append("<html>");
@@ -1004,7 +1004,7 @@ public class Field_Easy extends JFrame implements ActionListener {
                                 if (compareImageIcons((ImageIcon)label_easy[x][y].getIcon(), bomb) || 
                                     compareImageIcons((ImageIcon)label_easy[x][y].getIcon(), bombOld)) {
                                     if(sound.isSelected()) {
-                                        playSound("src/resources/explosion.wav");
+                                        playSound("MineSweeper-2.11/src/resources/explosion.wav");
                                     }
                                     if (color.isSelected()) {
                                         buttons_easy[x][y].setBackground(Color.RED);
